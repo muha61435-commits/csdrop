@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "PHANTOM SKINS - CS2 Магазин и Апгрейдер",
+  "short_name": "PHANTOM",
+  "description": "Премиальный интернет-магазин скинов и CS2 Upgrader в Казахстане. Моментальная доставка скинов в Steam.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "icons": [
+    {
+      "src": "/assets/aistudio/37107df72e0efc5d9bf6b2ed049d6fdd_d05d051c.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/aistudio/37107df72e0efc5d9bf6b2ed049d6fdd_d05d051c.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

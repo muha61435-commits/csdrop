@@ -1,0 +1,6 @@
+{
+  "name": "PHANTOM SKINS - Магазин скинов CS2",
+  "description": "Премиальный интернет-магазин скинов Counter-Strike 2 в Казахстане. Ножи, перчатки, винтовки, наклейки по выгодным ценам в тенге (₸) с моментальной доставкой.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

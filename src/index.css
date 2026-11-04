@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: dark;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #07090e;
+  color: #f1f5f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+  selection-background-color: #8b5cf6;
+  selection-color: #ffffff;
+  touch-action: manipulation;
+}
+
+/* Touch responsiveness */
+button, a, input, select {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2638;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* Hide scrollbar utility for clean mobile horizontal pill navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Carbon & mesh pattern utility */
+.cs-mesh-bg {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(0, 240, 255, 0.08) 0%, transparent 40%),
+    linear-gradient(to bottom, #07090e, #0b0e17);
+}
+
+.cs-card-glow {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cs-card-glow:hover {
+  box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.25);
+}
+
+/* Safe area bottom padding for iPhone home indicator and Android navigation */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+
