@@ -70,10 +70,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <p className="text-slate-400 text-xs leading-relaxed">
               Не аффилирован с Valve Corporation. Counter-Strike и CS2 являются товарными знаками Valve Corporation. Все права защищены.
             </p>
-            <div className="pt-1">
+            <div className="pt-2 flex flex-col gap-1.5">
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent('open-pwa-install'))}
+                className="text-xs text-amber-400 hover:text-amber-300 transition-colors cursor-pointer text-left font-semibold flex items-center gap-1.5"
+              >
+                <span>📱 Установить как ярлык на телефон</span>
+              </button>
               <button
                 onClick={() => onNavigate('admin')}
-                className="text-[11px] text-slate-500 hover:text-violet-400 transition-colors cursor-pointer"
+                className="text-[11px] text-slate-500 hover:text-violet-400 transition-colors cursor-pointer text-left"
               >
                 Панель управления (Admin)
               </button>

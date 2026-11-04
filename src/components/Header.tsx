@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, ShieldCheck, ShieldAlert, Package, ChevronsUp, Wallet } from 'lucide-react';
+import { ShoppingBag, ShieldCheck, ShieldAlert, Package, ChevronsUp, Wallet, Download } from 'lucide-react';
 import { TeamTheme } from '../data/teamThemes';
 import { formatKzt } from '../utils/formatters';
 
@@ -179,6 +179,16 @@ export const Header: React.FC<HeaderProps> = ({
               />
             </div>
             <span className="hidden sm:inline font-display">{currentTheme.shortName}</span>
+          </button>
+
+          {/* Quick Install App / Shortcut Button */}
+          <button
+            onClick={() => window.dispatchEvent(new CustomEvent('open-pwa-install'))}
+            className="flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-[11px] sm:text-xs font-bold text-amber-300 transition-all cursor-pointer shadow-sm active:scale-95"
+            title="Установить как ярлык на телефон"
+          >
+            <Download className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+            <span className="hidden sm:inline">Ярлык</span>
           </button>
 
           {/* Cart Button */}
